@@ -11,6 +11,7 @@ check_total_data();
 ////////////////// 
 async function check_total_data() {
   try {
+    console.log('--- Start Get total Data ---');
     // 
     let vrms_data = await check_vrms_data();
     let total_vrms = vrms_data[0].total_vrms;

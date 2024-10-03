@@ -5,7 +5,8 @@ const { parseString } = require('xml2js');
 const xmlData_false = false;
 async function solr_Query() {
   // URL ของ Solr core ที่คุณต้องการเชื่อมต่อ
-  const solrUrl = 'http://10.254.23.122:8983/solr/select?indent=on&version=2.2&q=type_t%3A%27vehiclereg%27&fq=&start=0&rows=1&fl=*%2Cscore&wt=&explainOther=&hl.fl=';
+    const solrUrl = 'http://192.168.1.117:8983/solr/select?indent=on&version=2.2&q=type_t%3A%27vehiclereg%27&fq=&start=0&rows=1&fl=*%2Cscore&wt=&explainOther=&hl.fl=';
+  // const solrUrl = 'http://10.254.23.122:8983/solr/select?indent=on&version=2.2&q=type_t%3A%27vehiclereg%27&fq=&start=0&rows=1&fl=*%2Cscore&wt=&explainOther=&hl.fl=';
   // console.log('sql: ', solrUrl);
   
   return new Promise((resolve, reject) => {
